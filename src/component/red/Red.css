@@ -1,0 +1,29 @@
+.app__red {
+  width: 387px;
+  height: 801px;
+  background-color: #171717;
+}
+
+.red__header {
+  width: 387px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  background-color: #a00;
+}
+
+.red__subheader {
+  width: 387px;
+  height: 188px;
+  flex-shrink: 0;
+  background-color: #1c4e57;
+}
+
+.detail__header {
+  color: #fff;
+  font-family: Inter;
+  font-size: 18.8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
