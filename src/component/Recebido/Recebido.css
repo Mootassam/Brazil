@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+.app__recebido {
+  width: 435.732px;
+  height: 800px;
+  background-color: #ffff;
+}
+
+.recebido__title {
+  padding-top: 28px;
+  padding-bottom: 15px;
+  color: #353535;
+  font-family: Inter;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.recebito__description {
+  color: #373737;
+  font-family: Inter;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.recebido__content {
+  padding-top: 68px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.__last {
+  color: #5e5e5e;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-top: 8px;
+  padding-bottom: 28px;
+}
+
+.recebido__amounttitle {
+  color: #5e5e5e;
+  font-family: Inter;
+  font-size: 19.8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.amount__recebido {
+  color: #000;
+  font-family: Inter;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.recebido__amount {
+  padding-top: 58px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 40px;
+}
+
+.recebido__bottom {
+  padding-top: 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-bottom: 30px;
+}
+
+.comprovante {
+  padding-left: 18px;
+  width: 403px;
+  height: 63px;
+  border-radius: 7px;
+  border: 2px solid #eee;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.pagamento {
+  padding-left: 18px;
+  width: 403px;
+  height: 63px;
+  border-radius: 7px;
+  border: 2px solid #eee;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.green__description {
+  color: #5e5e5e;
+  font-family: Inter;
+  font-size: 22.5px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
