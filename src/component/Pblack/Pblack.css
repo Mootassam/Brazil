@@ -62,6 +62,8 @@
   right: 0;
   border: 2px solid #fff;
   background-color: #efeff1;
+  display: grid;
+  place-items: center;
 }
 
 .circle__text {

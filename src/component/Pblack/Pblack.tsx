@@ -11,7 +11,10 @@ function Pblack(props) {
       <div className="personal__content">
         <div className="content__circle __cirlcleback">
           <span className="circle__text __grey">PL</span>
-          <div className="small__circle"></div>
+          <div className="small__circle">
+
+            <img src="/personal/down.png" alt="Image of the small" width={12} />
+          </div>
         </div>
         <div className="personaL__subheader">
           <span className="personal__text __textgrey">
