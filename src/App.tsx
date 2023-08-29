@@ -7,6 +7,7 @@ import Screenshot from "./shared/Screenshot";
 import { DrawingApp } from "./shared/DrawingApp";
 import Red from "./component/red/Red";
 import Recebido from "./component/Recebido/Recebido";
+import Personal from "./component/Personal/Personal";
 
 function App() {
   const divRef = useRef<HTMLDivElement>(null);
@@ -61,6 +62,7 @@ function App() {
     
           {value === "red" && <Red  amount={amount} />}
           {value === "recebido" && <Recebido  amount={amount} />}
+          { value === "personal" && <Personal amount={amount} />}
         </div>
         <div></div>
         <div></div>
