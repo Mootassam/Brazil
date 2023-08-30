@@ -10,7 +10,7 @@ function Pagamento(props) {
           <img src="/Pagamento/logo.png" alt="" width={40} height={40} />
         </div>
 
-        <span className="pagamento__amount">R$ {Number.brazil(props.amount)}</span>
+        <span className="pagamento__amount">R${Number.brazil(props.amount)}</span>
         <span className="cash">Cash Pay Meios de Pagamento LTDA</span>
 
         <div className="pagamento__border">
