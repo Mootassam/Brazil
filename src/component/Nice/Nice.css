@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap");
+
+.app__nice {
+    width: 372px;
+    height: 808px;
+    background-color: #fff;
+    position: relative;
+}
+
+.header__nice {
+    padding-top: 17px;
+    padding-left: 17px;
+}
+
+.nice__image {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 34px;
+}
+
+.nice__content {
+    width: 343px;
+    height: 197px;
+    border-radius: 14px;
+    background: #f2f2f2;
+    margin: auto;
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 0 19px;
+}
+
+.amount {
+    padding-top: 2px;
+    color: #353535;
+    font-family: "Abhaya Libre";
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.qrcode {
+    color: #404040;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.alves {
+    padding-top: 18px;
+    color: #000;
+    font-family: Inter;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 15px;
+}
+
+.internetsa {
+    color: #404040;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.border__without {
+    width: 343px;
+    height: 44px;
+    border-radius: 33px;
+    border: 1px solid #00406d;
+    color: #193e59;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: grid;
+    place-items: center;
+}
+
+.nice__bottom {
+    padding: 199px 15px 0 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.fullbackground {
+    width: 343px;
+    height: 44px;
+    border-radius: 33px;
+    background-color: #193e59;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: grid;
+    place-items: center;
+    color: #fff;
+}
+
+.mobile__nice {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile__nice {
+    position: absolute;
+    bottom: 8px;
+    display: flex;
+    left: 0;
+    right: 0;
+}

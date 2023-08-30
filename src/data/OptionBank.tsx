@@ -16,6 +16,10 @@ const optionBank = [
     value: "personal",
   },
   {
+    name: "nice",
+    value: "nice",
+  },
+  {
     name: "pagamento",
     value: "pagamento",
   },

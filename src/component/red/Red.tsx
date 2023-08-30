@@ -18,14 +18,13 @@ function Red(props) {
           </label>
         </div>
         <div className="subheader__bottom">
-          <label htmlFor="" className="title__red">
-            Pix recebido
+          <label htmlFor="" className="title__reds">
+            Valor
           </label>
-          <label htmlFor="" className="description__red">
-            Cash pay meios de pagamen
+          <label htmlFor="" className="amount__red">
+            R$ 495,00
           </label>
         </div>
-
       </div>
       <div className="red__content">
         <div className="content__redtop">

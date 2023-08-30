@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Noto+Sans:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Noto+Sans:wght@400;500;700&display=swap");
 .app__red {
   width: 387px;
   height: 801px;
@@ -44,6 +44,23 @@
 }
 
 .title__red {
+  color: #c8dde0;
+  font-family: Noto Sans;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.title__reds {
+  color: #c8dde0;
+  font-family: Noto Sans;
+  font-size: 13.8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.amount__red {
   color: #c8dde0;
   font-family: Noto Sans;
   font-size: 25px;
