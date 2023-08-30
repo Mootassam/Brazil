@@ -2,22 +2,24 @@ import React, { useEffect } from "react";
 import "./sidebar.css";
 import optionBank from "../../data/OptionBank";
 import { FaEraser, FaUndo } from "react-icons/fa";
-function Sidebar({ screenshot, value, setvalue, setAmount, setSize, size
-  , undo,
+function Sidebar({
+  screenshot,
+  value,
+  setvalue,
+  setAmount,
+  setSize,
+  size,
+  undo,
   erase,
   color,
   changeColor,
   brushSize,
   changeBrushSize,
-  clear
-
-
+  clear,
 }) {
   useEffect(() => {
     let data;
   }, [value]);
-
-
 
   return (
     <div className="app__sidebar">
@@ -58,7 +60,12 @@ function Sidebar({ screenshot, value, setvalue, setAmount, setSize, size
         <div className="form__group">
           <label htmlFor="">工具</label>
           <div className="app__tools">
-            <input type="color" value={color} onChange={changeColor} className="btn--color" />
+            <input
+              type="color"
+              value={color}
+              onChange={changeColor}
+              className="btn--color"
+            />
             <button className="undo" onClick={undo}>
               <FaUndo />
             </button>
@@ -76,11 +83,13 @@ function Sidebar({ screenshot, value, setvalue, setAmount, setSize, size
             value={brushSize}
             onChange={changeBrushSize}
           />
-          <button onClick={clear} className="clear__button">Clear</button>
+          <button onClick={clear} className="clear__button">
+            Clear
+          </button>
         </div>
       </div>
       <div className="app__screenshot" onClick={() => screenshot()}>
-        <img src="/sidebar/screenshot.png" alt="" width={80} />
+        <img src="screenshot.png" alt="" width={140} />
       </div>
     </div>
   );
