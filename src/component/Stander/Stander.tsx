@@ -1,6 +1,7 @@
 import React from "react";
 import "./Stander.css";
 import Number from "../../shared/Number";
+import Dates from "../../shared/dates";
 function Stander(props) {
   return (
     <div className="app__stander">
@@ -28,11 +29,11 @@ function Stander(props) {
         </div>
         <div className="standar__data">
           <span className="valor__name">Data e hora da transação </span>
-          <span className="standar__date"> 31/07/2023 - 14:39:25</span>
+          <span className="standar__date"> {Dates.fulldate()}</span>
         </div>
         <div className="standar__codigo">
           <span className="valor__name">Código de autenticação</span>
-          <span className="standar__code">E51YG4GJD2023073151854952</span>
+          <span className="standar__code">E51{Number.generateRandomString()}{Dates.generateRandomDateNumber()}{Number.generateRandom4Number()}{Number.generate4RandomNumber()}</span>
         </div>
         <div className="standar_moredetail">
           <div>

@@ -22,21 +22,24 @@ class Dates {
     return dateTime;
   }
 
-
-  static date(){ 
-    const date = moment().format('DD-MM-YYYY') ;
-    return date; 
+  static date() {
+    const date = moment().format("DD-MM-YYYY");
+    return date;
   }
-
 
   static ddmmyyyy() {
     const date = moment().format("DD/MM/YYYY");
     return date;
   }
 
-  static recebido(){ 
-    const date = moment().format('DD MMM YYYY HH:mm:ss');
-    return date
+  static recebido() {
+    const date = moment().format("DD MMM YYYY HH:mm:ss");
+    return date;
+  }
+
+  static fulldate() {
+    const currentdate = moment().format("DD/MM/YYYY - HH:mm:ss");
+    return currentdate;
   }
 
   static chan() {
@@ -59,41 +62,37 @@ class Dates {
       formattedDate = "Today, " + currentDate.format("DD MMM YYYY");
     } else {
       formattedDate = currentDate.format("DD MMM YYYY");
-    } 
-    return formattedDate
-  }
-
-
-  static generateRandomDateNumber() {
-    const currentDate = moment();
-    const formattedDate = currentDate.format('YYYYMMDD');
+    }
     return formattedDate;
   }
 
-  static personalblack(){ 
+  static generateRandomDateNumber() {
     const currentDate = moment();
-    const fomattedDate= currentDate.format('DD MMM YYYY - HH:mm:ss');
-    return fomattedDate
+    const formattedDate = currentDate.format("YYYYMMDD");
+    return formattedDate;
   }
 
-  static generatedate(){ 
-    const date = moment().format('YYMMDD') 
-    return date
+  static personalblack() {
+    const currentDate = moment();
+    const fomattedDate = currentDate.format("DD MMM YYYY - HH:mm:ss");
+    return fomattedDate;
   }
 
-  static hangseng(){ 
-    const date = moment().format('YYMDD') ;
+  static generatedate() {
+    const date = moment().format("YYMMDD");
+    return date;
+  }
+
+  static hangseng() {
+    const date = moment().format("YYMDD");
     return date;
   }
 
   static getCurrentDate() {
-    const currentDate = moment().format('DD MMM YYYY');
-  
+    const currentDate = moment().format("DD MMM YYYY");
+
     return currentDate;
   }
-
-
-
 }
 
 export default Dates;
