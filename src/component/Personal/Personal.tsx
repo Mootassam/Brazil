@@ -12,8 +12,10 @@ function Personal(props) {
       <div className="personal__content">
         <div className="content__circle">
           <span className="circle__text">PL</span>
-          
-          <div className="small__circle"></div>
+
+          <div className="small__circle">
+            <img src="/personal/down.png" alt=""  width={12} />
+          </div>
         </div>
 
         <div className="personaL__subheader">
@@ -41,7 +43,7 @@ function Personal(props) {
               <span className="enviar__detail">
                 Receba seu comprovante em formato pdf em
               </span>
-              <img src="" alt="" />
+              <img src="/personal/next.png" alt="nextImage"  width={8.5} className="nextImage"/>
             </div>
             <span className="enviar__detail">seu email</span>
           </div>
@@ -71,7 +73,8 @@ function Personal(props) {
               <span className="enviar__detail">
                 Faça um reembolso e devolva o valor integral ou
               </span>
-              <img src="" alt="" />
+              <img src="/personal/next.png" alt="nextI"  width={8.5} className="nextI"/>
+
             </div>
             <div className="last__detial">
               <span className="enviar__detail">
