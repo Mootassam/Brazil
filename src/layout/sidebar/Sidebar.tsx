@@ -23,7 +23,7 @@ function Sidebar({ screenshot, value, setvalue, setAmount, setSize, size
     <div className="app__sidebar">
       <div className="sidebar__form">
         <div className="form__group">
-          <label htmlFor=""> Select bank</label>
+          <label htmlFor=""> 选择银行</label>
           <select
             name="bank"
             className="app__select"
@@ -48,7 +48,7 @@ function Sidebar({ screenshot, value, setvalue, setAmount, setSize, size
           </div>
         )}
         <div className="form__group">
-          <label htmlFor=""> Write the Amount</label>
+          <label htmlFor=""> 写下金额</label>
           <input
             type="text"
             onChange={(e) => setAmount(e.target.value)}
@@ -56,7 +56,7 @@ function Sidebar({ screenshot, value, setvalue, setAmount, setSize, size
           />
         </div>
         <div className="form__group">
-          <label htmlFor="">Tools</label>
+          <label htmlFor="">工具</label>
           <div className="app__tools">
             <input type="color" value={color} onChange={changeColor} className="btn--color" />
             <button className="undo" onClick={undo}>
@@ -68,7 +68,7 @@ function Sidebar({ screenshot, value, setvalue, setAmount, setSize, size
           </div>
         </div>
         <div className="form__group">
-          <label htmlFor="">Brush Size</label>
+          <label htmlFor="">刷子大小</label>
           <input
             type="range"
             min="1"

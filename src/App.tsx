@@ -11,6 +11,7 @@ import Personal from "./component/Personal/Personal";
 import Pblack from "./component/Pblack/Pblack";
 import Pagamento from "./component/Pagamento/Pagamento";
 import Nice from "./component/Nice/Nice";
+import Stander from "./component/Stander/Stander";
 
 function App() {
   const divRef = useRef<HTMLDivElement>(null);
@@ -69,6 +70,9 @@ function App() {
           {value === "Pblack" && <Pblack amount={amount} />}
           {value === "pagamento" && <Pagamento amount={amount} />}
           {value === "nice" && <Nice amount={amount} />}
+          {value === "stander" && <Stander amount={amount} />}
+
+
         </div>
         <div></div>
         <div></div>
