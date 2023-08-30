@@ -1,6 +1,7 @@
 import React from "react";
 import "./Red.css";
 import Number from "../../shared/Number";
+import Dates from "../../shared/dates";
 function Red(props) {
   return (
     <div className="app__red">
@@ -23,7 +24,7 @@ function Red(props) {
             Valor
           </label>
           <label htmlFor="" className="amount__red">
-            R$ {Number.brazil(props.amount)}
+            R${Number.brazil(props.amount)}
           </label>
         </div>
       </div>
@@ -32,11 +33,11 @@ function Red(props) {
           <span className="content__title">
             Saldo em conta após este lançamento
           </span>
-          <span className="content__amount">lasR$ 495,00</span>
+          <span className="content__amount">lasR${Number.brazil(props.amount)}</span>
         </div>
         <div className="content__redbottom">
           <span className="content__title">Data</span>
-          <span className="content__amount">31/07/2023</span>
+          <span className="content__amount">{Dates.ddmmyyyy()}</span>
         </div>
       </div>
     </div>

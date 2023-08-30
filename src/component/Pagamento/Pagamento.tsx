@@ -29,7 +29,7 @@ function Pagamento(props) {
         <div className="detail__sobre">
           <div>
             <span className="detaill__1">Data de expiração</span>
-            <span className="detaill__2">{Dates.datepagemento()}</span>
+            <span className="detaill__2">{Dates.ddmmyyyy()}</span>
           </div>
           <div>
             <span className="detaill__1">Hora de expiração</span>

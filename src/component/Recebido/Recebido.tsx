@@ -1,6 +1,7 @@
 import React from "react";
 import "./Recebido.css";
 import Number from "../../shared/Number";
+import Dates from "../../shared/dates";
 function Recebido(props) {
   return (
     <div className="app__recebido">
@@ -13,23 +14,23 @@ function Recebido(props) {
         <span className="recebito__description">
           Intermediacao de Negocios Ltda
         </span>
-        <span className="recebito__description __last">
-          31 JUL 2023 12:52:53
-        </span>
+        <span className="recebito__description __last">{Dates.recebido()}</span>
         <img src="Recebido/bar.png" alt="" />
         <div className="recebido__amount">
           <span className="recebido__amounttitle">Valor recebido</span>
-          <span className="amount__recebido">R$ {Number.brazil(props.amount)}</span>
+          <span className="amount__recebido">
+            R${Number.brazil(props.amount)}
+          </span>
         </div>
         <img src="Recebido/bar.png" alt="" />
 
         <div className="recebido__bottom">
           <div className="comprovante">
             <img src="/public/Recebido/green.png" alt="" width={27} />
-            <span className="green__description"> Comprovante do Pix</span>
+            <span className="green__description">Comprovante do Pix</span>
           </div>
           <div className="pagamento">
-          <img src="/public/Recebido/back.png" alt="" width={29} />
+            <img src="/public/Recebido/back.png" alt="" width={29} />
             <span className="green__description">Devolver esse pagamento</span>
           </div>
         </div>

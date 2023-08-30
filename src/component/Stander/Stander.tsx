@@ -20,7 +20,7 @@ function Stander(props) {
       <div className="standar__content">
         <div className="standar__valor">
           <span className="valor__name">Valor</span>
-          <span className="valor__amount"> R$ {Number.brazil(props.amount)}</span>
+          <span className="valor__amount"> R${Number.brazil(props.amount)}</span>
         </div>
         <div className="standar__para">
           <span className="valor__name">Para</span>

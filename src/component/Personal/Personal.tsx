@@ -1,12 +1,13 @@
 import React from "react";
 import "./Personal.css";
 import Number from "../../shared/Number";
+import Dates from "../../shared/dates";
 function Personal(props) {
   return (
     <div className="app_personal">
       <div className="personal__header">
         <img src="/personal/close.png" width={15} />
-        <span className="personal__date">31 JUL 2023 -12:53:00</span>
+        <span className="personal__date">{Dates.personalblack()}</span>
         <div></div>
       </div>
 
@@ -24,7 +25,7 @@ function Personal(props) {
             Personal Servicos Financeiros Ltda
           </span>
           <span className="personal__bank">STARK BANK S.A.</span>
-          <span className="personal__amount">R$ {Number.brazil(props.amount)}</span>
+          <span className="personal__amount">R${Number.brazil(props.amount)}</span>
 
           <div className="ver__comprovante">
             <img src="/personal/home.png" alt="" width={21} height={22} />

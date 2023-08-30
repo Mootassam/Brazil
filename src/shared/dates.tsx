@@ -29,9 +29,14 @@ class Dates {
   }
 
 
-  static datepagemento() {
+  static ddmmyyyy() {
     const date = moment().format("DD/MM/YYYY");
     return date;
+  }
+
+  static recebido(){ 
+    const date = moment().format('DD MMM YYYY HH:mm:ss');
+    return date
   }
 
   static chan() {

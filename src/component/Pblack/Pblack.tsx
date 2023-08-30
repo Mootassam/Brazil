@@ -23,7 +23,7 @@ function Pblack(props) {
             Personal Servicos Financeiros Ltda
           </span>
           <span className="personal__bank">STARK BANK S.A.</span>
-          <span className="personal__amount __grey">R$ {Number.brazil(props.amount)}</span>
+          <span className="personal__amount __grey">R${Number.brazil(props.amount)}</span>
           <div className="ver__comprovante __fill">
             <img src="/personal/homewhite.png" alt="" width={21} height={22} />
             <span className="text__comprovante __grey">Ver Comprovante</span>
