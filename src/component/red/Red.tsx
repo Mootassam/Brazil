@@ -1,5 +1,6 @@
 import React from "react";
 import "./Red.css";
+import Number from "../../shared/Number";
 function Red(props) {
   return (
     <div className="app__red">
@@ -22,7 +23,7 @@ function Red(props) {
             Valor
           </label>
           <label htmlFor="" className="amount__red">
-            R$ 495,00
+            R$ {Number.brazil(props.amount)}
           </label>
         </div>
       </div>

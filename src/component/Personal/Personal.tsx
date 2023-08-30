@@ -1,5 +1,6 @@
 import React from "react";
 import "./Personal.css";
+import Number from "../../shared/Number";
 function Personal(props) {
   return (
     <div className="app_personal">
@@ -23,7 +24,7 @@ function Personal(props) {
             Personal Servicos Financeiros Ltda
           </span>
           <span className="personal__bank">STARK BANK S.A.</span>
-          <span className="personal__amount">R$ 508,00</span>
+          <span className="personal__amount">R$ {Number.brazil(props.amount)}</span>
 
           <div className="ver__comprovante">
             <img src="/personal/home.png" alt="" width={21} height={22} />

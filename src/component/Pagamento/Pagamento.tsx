@@ -1,5 +1,7 @@
 import React from "react";
 import "./pagamento.css";
+import Number from "../../shared/Number";
+import Dates from "../../shared/dates";
 function Pagamento(props) {
   return (
     <div className="app__pagamento">
@@ -8,7 +10,7 @@ function Pagamento(props) {
           <img src="/Pagamento/logo.png" alt="" width={40} height={40} />
         </div>
 
-        <span className="pagamento__amount">R$ 550,00</span>
+        <span className="pagamento__amount">R$ {Number.brazil(props.amount)}</span>
         <span className="cash">Cash Pay Meios de Pagamento LTDA</span>
 
         <div className="pagamento__border">
@@ -27,16 +29,16 @@ function Pagamento(props) {
         <div className="detail__sobre">
           <div>
             <span className="detaill__1">Data de expiração</span>
-            <span className="detaill__2">31/07/2023</span>
+            <span className="detaill__2">{Dates.datepagemento()}</span>
           </div>
           <div>
             <span className="detaill__1">Hora de expiração</span>
-            <span className="detaill__2">14:40</span>
+            <span className="detaill__2">{Dates.currentTime()}</span>
           </div>
           <div>
             <span className="detaill__1">Identificador</span>
             <span className="detaill__2">
-              S42620230731147852369852114752164
+              S426{Dates.generateRandomDateNumber()}14785236{Number.generate4RandomNumber()}{Number.generateRandom9Number()}
             </span>
           </div>
         </div>

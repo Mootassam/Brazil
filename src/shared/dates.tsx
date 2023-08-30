@@ -29,7 +29,7 @@ class Dates {
   }
 
 
-  static hangSeng() {
+  static datepagemento() {
     const date = moment().format("DD/MM/YYYY");
     return date;
   }

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Nice.css";
+import Number from "../../shared/Number";
 function Nice(props) {
   return (
     <div className="app__nice">
@@ -11,7 +12,7 @@ function Nice(props) {
       </div>
       <div className="nice__content">
         <span className="qrcode">Pix código QR realizado</span>
-        <span className="amount">R$ 550,00</span>
+        <span className="amount">R$ {Number.brazil(props.amount)}</span>
         <span className="alves">Nadson Eduardo Alves De Oliveira </span>
         <span className="internetsa">PAGSEGURO INTERNET IP S.A</span>
       </div>

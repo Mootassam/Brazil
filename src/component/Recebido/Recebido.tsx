@@ -1,5 +1,6 @@
 import React from "react";
 import "./Recebido.css";
+import Number from "../../shared/Number";
 function Recebido(props) {
   return (
     <div className="app__recebido">
@@ -18,7 +19,7 @@ function Recebido(props) {
         <img src="Recebido/bar.png" alt="" />
         <div className="recebido__amount">
           <span className="recebido__amounttitle">Valor recebido</span>
-          <span className="amount__recebido">R$ 508,00</span>
+          <span className="amount__recebido">R$ {Number.brazil(props.amount)}</span>
         </div>
         <img src="Recebido/bar.png" alt="" />
 
