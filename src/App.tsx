@@ -9,13 +9,14 @@ import Red from "./component/red/Red";
 import Recebido from "./component/Recebido/Recebido";
 import Personal from "./component/Personal/Personal";
 import Pblack from "./component/Pblack/Pblack";
+import Pagamento from "./component/Pagamento/pagamento";
 
 function App() {
   const divRef = useRef<HTMLDivElement>(null);
   const handleCaptureScreenshot = () => {
     Screenshot.handleCaptureScreenshot(divRef);
   };
-  const [value, setValue] = useState("red");
+  const [value, setValue] = useState("Pblack");
   const [amount, setAmount] = useState(100);
   const [size, setSize] = useState("small");
   const [
@@ -38,10 +39,10 @@ function App() {
         />
         <div className="content" ref={divRef}>
           <div className="app__canvas">
-            {value === "BankChina" ? (
+            {value === "pagamento" ? (
               <canvas
                 ref={canvasRef as any}
-                width={384}
+                width={550}
                 height={801}
                 style={{ cursor }}
                 onMouseDown={startDrawing}
@@ -60,11 +61,12 @@ function App() {
               />
             )}
           </div>
-    
-          {value === "red" && <Red  amount={amount} />}
-          {value === "recebido" && <Recebido  amount={amount} />}
-          { value === "personal" && <Personal amount={amount} />}
-          { value === "Pblack" && <Pblack amount={amount} />}
+
+          {value === "red" && <Red amount={amount} />}
+          {value === "recebido" && <Recebido amount={amount} />}
+          {value === "personal" && <Personal amount={amount} />}
+          {value === "Pblack" && <Pblack amount={amount} />}
+          {value === "pagamento" && <Pagamento amount={amount} />}
         </div>
         <div></div>
         <div></div>

@@ -1,0 +1,158 @@
+.app__pagamento {
+  width: 550px;
+  height: 801px;
+  background-color: #fff;
+}
+
+.pagamento__circle {
+  width: 88px;
+  height: 88px;
+  background-color: #f5f6fb;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin-bottom: 19px;
+}
+/* styling the header */
+
+.pagamento__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 27px;
+}
+/* styling the content  */
+.pagamento__amount {
+  color: #000;
+  font-family: Inter;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 7px;
+}
+
+.pagamento__border {
+  width: 176px;
+  height: 43px;
+  flex-shrink: 0;
+  border-radius: 86px;
+  background: #161616;
+  display: flex;
+  align-items: center;
+  padding: 6px 6px 5px 22px;
+  justify-content: space-between;
+  margin-bottom: 29px;
+}
+
+.smallcircle__grey {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  background-color: #6e6d75;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.outras__text {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.cash {
+  color: #767676;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 22px;
+}
+
+/* styling the detail */
+
+.sobre__detail {
+  padding-left: 27px;
+  padding-right: 23px;
+}
+
+.sbore__title {
+  color: #000;
+  font-family: Inter;
+  font-size: 23.4px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  padding-top: 35px;
+  padding-bottom: 24px;
+}
+
+.detaill__1 {
+  color: #767676;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.__second__title {
+  color: #000;
+  font-family: Inter;
+  font-size: 23.4px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-top: 39px;
+  padding-bottom: 24px;
+}
+
+.__third__title {
+  color: #000;
+  font-family: Inter;
+  font-size: 23.4px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-top: 30px;
+  padding-bottom: 22px;
+}
+.detaill__2 {
+  color: #000;
+  font-family: Inter;
+  font-size: 16.5px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.detail__sobre > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.detail__sobre {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.detail__pagemento {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.detail__pagemento > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
