@@ -1,11 +1,13 @@
 import React from "react";
 import "./Pblack.css";
+import Number from "../../shared/Number";
+import Dates from "../../shared/dates";
 function Pblack(props) {
   return (
     <div className="app__black">
       <div className="personal__header">
         <img src="/personal/closegrey.png" width={15} />
-        <span className="personal__date __timedate">31 JUL 2023 -12:53:00</span>
+        <span className="personal__date __timedate">{Dates.personalblack()}</span>
         <div></div>
       </div>
       <div className="personal__content">
@@ -21,7 +23,7 @@ function Pblack(props) {
             Personal Servicos Financeiros Ltda
           </span>
           <span className="personal__bank">STARK BANK S.A.</span>
-          <span className="personal__amount __grey">R$ 508,00</span>
+          <span className="personal__amount __grey">R$ {Number.brazil(props.amount)}</span>
           <div className="ver__comprovante __fill">
             <img src="/personal/homewhite.png" alt="" width={21} height={22} />
             <span className="text__comprovante __grey">Ver Comprovante</span>

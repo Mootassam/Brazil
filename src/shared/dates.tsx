@@ -65,6 +65,12 @@ class Dates {
     return formattedDate;
   }
 
+  static personalblack(){ 
+    const currentDate = moment();
+    const fomattedDate= currentDate.format('DD MMM YYYY - HH:mm:ss');
+    return fomattedDate
+  }
+
   static generatedate(){ 
     const date = moment().format('YYMMDD') 
     return date
